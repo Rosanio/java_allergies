@@ -25,6 +25,13 @@ public class AppTest extends FluentTest {
       goTo("http://localhost:4567/");
       assertThat(pageSource()).contains("Enter your allergy score");
   }
+  @Test
+  public void submitTest() {
+      goTo("http://localhost:4567/");
+      fill("#score").with("48");
+      submit(".btn");
+      assertThat(pageSource()).contains("chocolate");
+  }
 
   @Test
   public void checkAllergies_catAllergies_returnCatAllergies() {
