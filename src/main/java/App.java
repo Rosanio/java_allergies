@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 
-
 import static spark.Spark.*;
 
 public class App {
@@ -21,14 +20,11 @@ public class App {
     get("/list", (request, response) -> {
       HashMap model = new HashMap();
       String scoreString = request.queryParams("score");
-
       if (scoreString.length() == 0){
         scoreString = "0";
       }
-
       Integer score = Integer.parseInt(scoreString);
       ArrayList<String> allergies = checkAllergies(score);
-
       model.put("allergies", allergies);
       model.put("template", "templates/allergy-list.vtl");
       model.put("form", form);

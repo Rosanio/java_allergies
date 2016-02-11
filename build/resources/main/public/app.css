@@ -3,5 +3,6 @@
 }
 
 .large {
-  max-width: 850px;
+  max-width: 80%;
+  height:auto;
 }
