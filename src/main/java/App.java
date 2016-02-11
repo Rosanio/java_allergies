@@ -21,7 +21,14 @@ public class App {
     allergyIndex.put(128, "cats");
     Integer counter = 128;
     ArrayList<String> allergies = new ArrayList<String>();
-    allergies.add(allergyIndex.get(counter));
+    while(allergyScore > 0) {
+      if(allergyScore >= counter) {
+        allergies.add(allergyIndex.get(counter));
+        allergyScore -= counter;
+      }
+      counter = counter / 2;
+    }
+
     return allergies;
   }
 }

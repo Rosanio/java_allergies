@@ -33,4 +33,18 @@ public class AppTest extends FluentTest {
     testArrayList.add("cats");
     assertEquals(testArrayList, testApp.checkAllergies(128));
   }
+  @Test
+  public void checkAllergies_allAllergies_returnallAllergies() {
+    App testApp = new App();
+    ArrayList<String> testArrayList = new ArrayList<String>();
+    testArrayList.add("cats");
+    testArrayList.add("pollen");
+    testArrayList.add("chocolate");
+    testArrayList.add("tomatoes");
+    testArrayList.add("strawberries");
+    testArrayList.add("shellfish");
+    testArrayList.add("peanuts");
+    testArrayList.add("eggs");
+    assertEquals(testArrayList, testApp.checkAllergies(255));
+  }
 }
