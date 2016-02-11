@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-02-11T19:16:02" hostname="epicodus-50.local" time="0.003">
+  <properties/>
+  <testcase name="checkAllergies_catAllergies_returnCatAllergies" classname="AppTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
